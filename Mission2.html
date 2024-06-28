@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission2</title>
+</head>
+<body> 
+    <!--
+    今天气温31
+    -->
+    <!--<p class="content"></p>-->
+    <input type="text"></input>
+    <button type="button">点击生成笑话</button>
+</body>
+<script>
+    //1
+    var content ='这句话会展现出来';
+    //2生成一个随机笑话
+    var joke = generateJoke();
+    //3.为他加一个点击事件
+    btn = document.querySelector("#button1");
+    btn.addEvenlistener('click',clickButton);
+    // p.inn
+
+    //生成一个笑话
+    function generateJoke(){
+
+        var targetUsers = ['小明','小红','小蓝','小黑','小英',];
+        var places = ['11楼','22楼','33楼','44楼','55楼',];
+        var actions = ['在xxxxxxx','变成了一直猪','变成狗','就没了','xxxxx'];
+
+        //随机拿到数值
+        var targetUsers = getElement(targetUsers);
+    
+        var places = getElement(places);
+        var action = getElement(actions);
+        //拿到一个值
+        var sourceUser = document.querySelector(".text1").value;
+        
+
+        var joke = `今天气温 ${Math.random() * 30 } 摄氏度， ${targetUser}出门散步 。当走到${place}门前时，突然${action}。 $人们都惊呆了， ${sourceUser}全程目睹，因为${targetUser}天气太热了。`;
+        //结果
+        console.log(joke);
+        return joke;
+    } 
+
+    //随机
+    function getElement(arr){
+
+    }
+    function clickButton() {
+        console.log('我点击了一下');
+    }
+</script>
+</html>
