@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猜数字游戏</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>猜数字游戏</h1>
+    <p>填入你猜的数字试试吧: <input type="text" id="guessinput"> <button id="guessbutton">提交</button> <button id="restart">重新开始</button></p>
+    <p id="result"></p>
+    <script>
+        var num = Math.round(Math.random() * 100);
+        var count = 0;
+        var guesses = [];
+        document.getElementById('guessbutton').addEventListener('click', function() {
+            var guess = parseInt(document.getElementById('guessinput').value);
+            count++;
+            guesses.push(guess);
+            if (guess === num) {
+                document.getElementById('result').innerText = '恭喜！您猜对了，答案就是 ' + num + '，共猜了 ' + count + ' 次。';
+                document.getElementById('result').innerText += ' 您的猜测历史: ' + guesses.join(', ');
+                document.getElementById('guessbutton').disabled = true;
+                document.getElementById('restart').disabled = false;
+            } else if (guess < num) {
+                document.getElementById('result').innerText = '猜小了，请继续猜。';
+            } else {
+                document.getElementById('result').innerText = '猜大了，请继续猜。';
+            }
+        });
+
+        document.getElementById('restart').addEventListener('click', function() {
+            num = Math.round(Math.random() * 100);
+            count = 0;
+            guesses = [];
+            document.getElementById('result').innerText = '';
+            document.getElementById('guessinput').value = ''; 
+            document.getElementById('guessbutton').disabled = false;
+        });
+
+    </script>
+
+</body>
+</html># zuoye.github.io
