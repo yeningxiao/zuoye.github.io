@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>歌手页面 - 音乐网站</title>
+    <link rel="icon" type="image/png" href="../images/音乐小图标1.png">
+    <link rel="stylesheet" type="text/css" href="../CSS/singer.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">主页</a></li>
+                <li><a href="playlists.html">歌单列表</a></li>
+                <li><a href="playlist_detail.html">歌单详情</a></li>
+                <li><a href="album.html">专辑</a></li>
+                <li><a href="singer.html">歌手信息</a></li>
+                <li><a href="play.html">播放</a></li>
+                <li><a href="search.html">搜索</a></li>
+                <li><a href="my_music.html">我的音乐</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>歌手信息</h2>
+            <img src="../images/歌手.jpg" alt="艺人照片" width="500">
+            <h3>歌手名称</h3>
+            <p><a href="https://baike.baidu.com/item/%E5%91%A8%E6%9D%B0%E4%BC%A6/129156" target="_blank">周杰伦</a></p>
+            <h3>歌手介绍</h3>
+            <p>周杰伦自幼开始学习音乐，</p>
+            <p>周杰伦（Jay Chou），1979年1月18日出生于台湾省新北市，祖籍福建省永春县，华语流行乐男歌手、音乐人、演员、导演、编剧，毕业于淡江中学</p>
+            <p>2000年，发行个人首张音乐专辑《Jay》。</p>
+            <p>2001年，凭借专辑《范特西》奠定其融合中西方音乐的风格</p>
+            <p>2002年，举行“The One”世界巡回演唱会。</p>
+            <p>2003年，成为美国《时代》杂志封面人物；同年，发行音乐专辑《叶惠美》，</p>
+            <p>2010年，入选美国《Fast Company》杂志评出的“全球百大创意人物</p>
+            <p>2023年，凭借专辑《最伟大的作品》成为首位获得国际唱片业协会“全球畅销专辑榜”冠军的华语歌手。
+            </p>
+        </section>
+        <section>
+            <h2>专辑列表</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img src="../images/最伟大的作品.jpg" alt="专辑1">
+                    <img src="../images/床边故事.jpg" alt="专辑2">
+                    <img src="../images/圣诞星.jpg" alt="专辑3">
+                    <img src="../images/十二新作.jpg" alt="专辑4">
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>热门歌曲</h2>
+            <div class="popular-songs">
+                <div class="popular-song-card">
+                    <img src="../images/床边故事.jpg" alt="热门歌曲1">
+                    <div>
+                        <h4>床边故事</h4>
+                        <p>歌手: 周杰伦</p>
+                        <p>专辑: 床边故事</p>
+                        <p>时长: 3:45</p>
+                        <p>发行时间: 2016-06-24</p>
+                        <span>曲风: 现代</span>
+                        <span>语种: 华语</span>
+                    </div>
+                </div>
+                <div class="popular-song-card">
+                    <img src="../images/圣诞星.jpg" alt="热门歌曲2">
+                    <div>
+                        <h4>圣诞星</h4>
+                        <p>歌手: 周杰伦</p>
+                        <p>专辑: 圣诞星</p>
+                        <p>时长: 3:02</p>
+                        <p>发行时间: 2023-12-22</p>
+                        <span>曲风: 现代</span>
+                        <span>语种: 华语</span>
+                    </div>
+                </div>
+                <div class="popular-song-card">
+                    <img src="../images/最伟大的作品.jpg" alt="热门歌曲3">
+                    <div>
+                        <h4>最伟大的作品</h4>
+                        <p>歌手: 周杰伦</p>
+                        <p>专辑: 最伟大的作品</p>
+                        <p>时长: 4:04</p>
+                        <p>发行时间: 2022-07-15</p>
+                        <span>曲风:现代</span>
+                        <span>语种: 国语</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>视频播放</h2>
+            <video width="80%" controls>
+                <source src="../images/最伟大的作品.mp4" type="video/mp4">
+            </video>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 音乐网站</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../JS/singer.js"></script>
+</body>
+
+</html>

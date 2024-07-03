@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的音乐 - 音乐网站</title>
+    <link rel="icon" type="image/png" href="../images/音乐小图标1.png">
+    <link rel="stylesheet" type="text/css" href="../CSS/my_music.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+</head>
+
+<body>
+    <header>
+//头部导航菜单
+        <nav>
+            <ul>
+                <li><a href="../index.html">主页</a></li>
+                <li><a href="playlists.html">歌单列表</a></li>
+                <li><a href="playlist_detail.html">歌单详情</a></li>
+                <li><a href="album.html">专辑</a></li>
+                <li><a href="singer.html">歌手信息</a></li>
+                <li><a href="play.html">播放</a></li>
+                <li><a href="search.html">搜索</a></li>
+                <li><a href="my_music.html">我的音乐</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+//点击可以打开不同页面
+        <section id="my-favorites">
+            <h2>我的收藏</h2>
+            <div class="favorites-list">
+                <a href="https://c6.y.qq.com/base/fcgi-bin/u?__=d9KoXKPdO5JB" target="_blank">
+                    <div class="favorites-item">歌单 代替</div>
+                </a>
+                <a href="https://c6.y.qq.com/base/fcgi-bin/u?__=cH9T7m4v" target="_blank">
+                    <div class="favorites-item">歌单 假装快乐</div>
+                </a>
+                <a href="https://c6.y.qq.com/base/fcgi-bin/u?__=wO1dTHXYfOr3" target="_blank">
+                    <div class="favorites-item">专辑 最伟大的作品</div>
+                </a>
+            </div>
+//创建表格放上我最近播放
+        </section>
+        <section id="play-history">
+            <h2>播放历史</h2>
+            <table>
+                <tr>
+                    <th class="song-artist-separator">歌曲</th>
+                    <th>歌手</th>
+                </tr>
+                <tr>
+                    <td>说好的，幸福呢</td>
+                    <td>周杰伦</td>
+                </tr>
+                <tr>
+                    <td>代替</td>
+                    <td>林倛玉</td>
+                </tr>
+                <tr>
+                    <td>交换余生</td>
+                    <td>林俊杰</td>
+                </tr>
+                <tr>
+                    <td>你在不在</td>
+                    <td>蔡依林</td>
+                </tr>
+                <tr>
+                    <td>如果可以</td>
+                    <td>汪苏泷</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 音乐网站</p>
+    </footer>
+//引入my_music.js
+    <script src="../JS/my_music.js"></script>
+</body>
+
+</html>
